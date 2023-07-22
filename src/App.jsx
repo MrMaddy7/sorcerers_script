@@ -1,13 +1,11 @@
-import { useState } from 'react';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
 
 function App() {
-
-
   return (
-    <>
-      <p>Mona Lisa</p>
-    </>
+    <div className="App-layout">
+      <p></p>
+    </div>
   );
 }
 
