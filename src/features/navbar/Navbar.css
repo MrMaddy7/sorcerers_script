@@ -1,1 +1,69 @@
-/* No CSS *//*# sourceMappingURL=Navbar.css.map */
+@font-face {
+  font-family: "Fette";
+  src: url("../../Fonts/FETTE___.TTF");
+}
+@font-face {
+  font-family: "Muggle";
+  src: url("../../Fonts/mugglenews_by_nathanthenerd_d41qn8p.ttf");
+}
+@font-face {
+  font-family: "PressStyle";
+  src: url("../../Fonts/PressStyleSerif.ttf");
+}
+@font-face {
+  font-family: "QuietZoo";
+  src: url("../../Fonts/QuietZoo.ttf");
+}
+.NavbarView {
+  padding: 0.2rem 0.5rem 0 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.NavbarView .nav-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+.NavbarView .nav-2 {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 2;
+  margin: 0 15rem 0 0;
+}
+.NavbarView .nav-2 .logo {
+  height: 10rem;
+  width: 10rem;
+}
+.NavbarView .nav-3 {
+  display: flex;
+}
+.NavbarView .nav-3 ul {
+  display: flex;
+  justify-content: flex-end;
+}
+.NavbarView .nav-3 ul li {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.NavbarView .burger-menu {
+  height: 50px;
+  width: 50px;
+  align-self: baseline;
+}
+.NavbarView h1 {
+  font-family: "Muggle";
+  font-size: 4rem;
+  margin: 0 0 0 1rem;
+  align-self: center;
+}
+.NavbarView .setting-wheel img {
+  height: 50px;
+  width: 50px;
+}
+.NavbarView .user-wheel img {
+  height: 50px;
+  width: 50px;
+}/*# sourceMappingURL=Navbar.css.map */
