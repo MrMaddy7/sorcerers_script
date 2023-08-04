@@ -19,7 +19,7 @@
 }
 
 .NavbarView {
-  padding: 0.2rem 0.5rem 0 0.5rem;
+  padding: 1rem 0.5rem 0 0.5rem;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -38,32 +38,40 @@
     margin: 0 15rem 0 0;
 
     .logo {
-      height: 10rem;
-      width: 10rem;
+      max-width: 10rem;
+      max-height: 10rem;
     }
-
+    h1 {
+      font-family: "Muggle";
+      font-size: 4rem;
+      margin: 0 0 0 1rem;
+      align-self: flex-start;
+    }
     .input-search {
       font-family: "QuietZoo";
-      align-self: center;
+      align-self: flex-start;
       margin-left: 2rem;
-      width: 15rem;
-      font-size: 3rem;
+      width: 14rem;
+      font-size: 2.5rem;
       height: 4rem;
       background-color: transparent;
-      border: 1px solid #ccc;
+      border: 2px solid black;
     }
-
+    .input-search:focus {
+      outline: none;
+    }
+    .input-search::placeholder {
+      color: black;
+    }
   }
 
   .nav-3 {
     display: flex;
 
-
     ul {
       display: flex;
       justify-content: flex-end;
       gap: 2rem;
-
     }
 
     ul li {
@@ -77,13 +85,6 @@
     height: 50px;
     width: 50px;
     align-self: baseline;
-  }
-
-  h1 {
-    font-family: "Muggle";
-    font-size: 4rem;
-    margin: 0 0 0 1rem;
-    align-self: center;
   }
 
   .setting-wheel img {

@@ -14,7 +14,7 @@ function NavbarView() {
     <div className="nav-2">
       <img className="logo" src={ DpLogo } />
       <h1>Sorcerer's Script</h1>
-      <input className="input-search" placeholder="Search"></input>
+      <input className="input-search" placeholder="Search..."></input>
     </div>
     <div className="nav-3">
       <ul>
