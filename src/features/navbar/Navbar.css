@@ -36,12 +36,23 @@
   height: 10rem;
   width: 10rem;
 }
+.NavbarView .nav-2 .input-search {
+  font-family: "QuietZoo";
+  align-self: center;
+  margin-left: 2rem;
+  width: 15rem;
+  font-size: 3rem;
+  height: 4rem;
+  background-color: transparent;
+  border: 1px solid #ccc;
+}
 .NavbarView .nav-3 {
   display: flex;
 }
 .NavbarView .nav-3 ul {
   display: flex;
   justify-content: flex-end;
+  gap: 2rem;
 }
 .NavbarView .nav-3 ul li {
   display: flex;
