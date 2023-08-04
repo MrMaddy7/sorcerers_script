@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Fette";
+  src: url("../../Fonts/FETTE___.TTF");
+}
+.Sidebar-panel {
+  width: 22%;
+  height: 38rem;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.Sidebar-panel ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1rem 0rem 0rem 1rem;
+  list-style: none;
+}
+.Sidebar-panel li {
+  display: flex;
+  font-family: "Fette";
+  font-size: 1.4rem;
+}
+.Sidebar-panel .items-bullet {
+  height: 5rem;
+  width: 5rem;
+}
+.Sidebar-panel .items-text {
+  margin: 1rem;
+}
+
+/* For WebKit browsers (Chrome, Safari) */
+.Sidebar-panel::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}/*# sourceMappingURL=Sidebar.css.map */

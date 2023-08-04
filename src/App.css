@@ -6,6 +6,7 @@
 
 body {
   /* Set the background image and define its properties */
+  z-index: -100000;
   background-image: url("./assets/WebPageBG.png");
   background-size: cover;
   background-repeat: no-repeat;
