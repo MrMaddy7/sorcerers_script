@@ -4,11 +4,12 @@
 }
 .Sidebar-panel {
   width: 22%;
-  max-height: 52.9vh;
+  max-height: 75.2vh;
   overflow-y: scroll;
   overflow-x: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  scroll-behavior: smooth;
 }
 .Sidebar-panel ul {
   display: flex;

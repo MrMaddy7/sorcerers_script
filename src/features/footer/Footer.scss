@@ -4,17 +4,16 @@
 }
 
 .FooterView {
-  border: 2px solid black;
   background-color: black;
-  margin-top: auto;
   position: relative;
-  top: 22vh;
+
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   span {
     font-family: "Inkpot";
+    font-size: 18px;
     color: whitesmoke;
     margin-left: 40%;
   }

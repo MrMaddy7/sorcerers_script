@@ -13,4 +13,5 @@ body {
 
 .App-layout {
   max-height: 100vh;
+  overflow: hidden;
 }/*# sourceMappingURL=App.css.map */

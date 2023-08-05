@@ -7,7 +7,7 @@ function SidebarView() {
     let listTags = [
         {
             "key": "1",
-            "tagName": "Inspirational"
+            "tagName": "Pinned"
         },
         {
             "key": "2",
@@ -26,19 +26,19 @@ function SidebarView() {
             "tagName": "To-Do"
         },
         {
-            "key": "2",
+            "key": "6",
             "tagName": "Personal"
         },
         {
-            "key": "3",
+            "key": "7",
             "tagName": "Office"
         },
         {
-            "key": "4",
+            "key": "8",
             "tagName": "Movies"
         },
         {
-            "key": "5",
+            "key": "9",
             "tagName": "To-Do"
         },
     ];
