@@ -4,7 +4,7 @@
 }
 .Sidebar-panel {
   width: 22%;
-  height: 38rem;
+  max-height: 52.9vh;
   overflow-y: scroll;
   overflow-x: hidden;
   scrollbar-width: none;

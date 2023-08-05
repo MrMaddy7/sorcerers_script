@@ -1,0 +1,13 @@
+import React from 'react';
+import "./Footer.css";
+
+function FooterView() {
+    return (
+
+        <footer class="FooterView">
+            <span>I Solemnly Swear That I Am Up to No Good</span>
+        </footer>
+    );
+}
+
+export default FooterView;

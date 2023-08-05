@@ -25,6 +25,22 @@ function SidebarView() {
             "key": "5",
             "tagName": "To-Do"
         },
+        {
+            "key": "2",
+            "tagName": "Personal"
+        },
+        {
+            "key": "3",
+            "tagName": "Office"
+        },
+        {
+            "key": "4",
+            "tagName": "Movies"
+        },
+        {
+            "key": "5",
+            "tagName": "To-Do"
+        },
     ];
 
     return (

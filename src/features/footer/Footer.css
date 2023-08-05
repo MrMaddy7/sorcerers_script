@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Inkpot";
+  src: url("../../Fonts/Inkpot.ttf");
+}
+.FooterView {
+  border: 2px solid black;
+  background-color: black;
+  margin-top: auto;
+  position: relative;
+  top: 22vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.FooterView span {
+  font-family: "Inkpot";
+  color: whitesmoke;
+  margin-left: 40%;
+}/*# sourceMappingURL=Footer.css.map */
