@@ -1,19 +1,17 @@
 .CardContainer-Box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   overflow-x: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
   scroll-behavior: smooth;
   width: 77%;
   height: 73vh;
-  border: 1px solid black;
   position: absolute;
   top: 11rem;
   left: 19.7rem;
   overflow-y: auto;
-}
-.CardContainer-Box li {
-  font-size: 3rem;
-  list-style: none;
 }
 
 /* For WebKit browsers (Chrome, Safari) */

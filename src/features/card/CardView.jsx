@@ -1,10 +1,11 @@
 import React from 'react';
+import './Card.css';
 
-function CardView() {
+function CardView({ title, description }) {
 
     const singleCard = {
         "key": 0,
-        "Title": "Tome Riddle",
+        "Title": "Tom Riddle",
         "Description": "This diary belongs to tom riddle",
         isPinned: true,
         "tag": "Personal",
@@ -13,7 +14,10 @@ function CardView() {
     };
 
     return (
-        <div>CardView</div>
+        <div className="SingleCard">
+            <h2>{ title }</h2>
+            <p>{ description }</p>
+        </div>
     );
 }
 
