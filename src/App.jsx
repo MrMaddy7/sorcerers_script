@@ -1,17 +1,19 @@
 import { useState } from "react";
 import "./App.css";
-import NavbarView from "./features/navbar/NavbarView";
-import SidebarView from "./features/sidebar/SidebarView";
-import FooterView from "./features/footer/FooterView";
-import CardContinerView from "./features/cardContainer/CardContainerView";
+import BackgroundMusic from './features/backgroundMusic/BackgroundMusic';
+import DashboardView from './features/dashBoard/DashboardView';
+import LoginView from "./features/login/LoginView";
+import SignUpView from "./features/signUp/SignUpView";
+
+
 
 function App() {
   return (
     <div className="App-layout">
-      <NavbarView />
-      <SidebarView />
-      <CardContinerView />
-      <FooterView />
+      <BackgroundMusic />
+      <DashboardView />
+      {/* <LoginView /> */ }
+      {/* <SignUpView /> */ }
     </div>
   );
 }

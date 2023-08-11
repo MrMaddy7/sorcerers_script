@@ -1,0 +1,65 @@
+@font-face {
+  font-family: "Muggle";
+  src: url("../../Fonts/mugglenews_by_nathanthenerd_d41qn8p.ttf");
+}
+@font-face {
+  font-family: "QuietZoo";
+  src: url("../../Fonts/QuietZoo.ttf");
+}
+.Login-Section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.Login-Section h1 {
+  font-family: "Muggle";
+  font-size: 5rem;
+}
+.Login-Section h6 {
+  font-family: "QuietZoo";
+  font-size: 2rem;
+}
+.Login-Section .Login-logo {
+  max-width: 10rem;
+  max-height: 10rem;
+}
+.Login-Section .login-form {
+  display: flex;
+  flex-direction: column;
+  min-width: 45%;
+  align-items: center;
+  border: 1px solid black;
+  padding: 3rem;
+}
+.Login-Section input {
+  margin: 1rem 0 1rem 0;
+  font-family: "QuietZoo";
+  width: 22rem;
+  font-size: 2.5rem;
+  height: 4rem;
+  background-color: transparent;
+  border: 2px solid black;
+}
+.Login-Section input:focus {
+  outline: none;
+}
+.Login-Section input::-moz-placeholder {
+  color: black;
+}
+.Login-Section input::placeholder {
+  color: black;
+}
+.Login-Section button {
+  margin: 2rem 0 0 0;
+  width: 8rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-family: "QuietZoo";
+  font-size: 2.5rem;
+}
+.Login-Section button:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}/*# sourceMappingURL=Login.css.map */
