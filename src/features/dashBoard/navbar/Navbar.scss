@@ -29,6 +29,7 @@
   .nav-1 {
     display: flex;
     flex-wrap: wrap;
+    cursor: pointer;
   }
 
   .nav-2 {
@@ -40,12 +41,14 @@
     .logo {
       max-width: 10rem;
       max-height: 10rem;
+      cursor: pointer;
     }
     h1 {
       font-family: "Muggle";
       font-size: 4rem;
       margin: 0 0 0 1rem;
       align-self: flex-start;
+      cursor: pointer;
     }
     .input-search {
       font-family: "QuietZoo";
@@ -67,6 +70,7 @@
 
   .nav-3 {
     display: flex;
+    cursor: pointer;
 
     ul {
       display: flex;

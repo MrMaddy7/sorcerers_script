@@ -1,20 +1,20 @@
 import React from 'react';
 import './Card.css';
+import { useSelector, useDispatch } from 'react-redux';
+import { handleModalToggle, addData } from '../../../modal/modalSlice';
+
 
 function CardView({ title, description }) {
+    // const modalShow = useSelector((state) => state.modal.modalShow); //Boolean
 
-    const singleCard = {
-        "key": 0,
-        "Title": "Tom Riddle",
-        "Description": "This diary belongs to tom riddle",
-        isPinned: true,
-        "tag": "Personal",
-        "date": "2017-01-01"
+    const dispatch = useDispatch();
 
+    const handleSingleCardClick = () => {
+        dispatch(handleModalToggle());
+        dispatch(addData({ title, description }));
     };
-
     return (
-        <div className="SingleCard">
+        <div className="SingleCard" onClick={ handleSingleCardClick }>
             <h2>{ title }</h2>
             <p>{ description }</p>
         </div>

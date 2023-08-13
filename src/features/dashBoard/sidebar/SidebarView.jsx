@@ -46,7 +46,6 @@ function SidebarView() {
     ];
     const sidebarShow = useSelector((state) => state.sidebar.sidebarShow); //Boolean
     const sidebarClass = `${sidebarShow ? 'Sidebar-panel-show' : 'Sidebar-panel-hide'}`;
-    console.log(sidebarClass, "Sidebar Class Variable");
     return (
         <div className={ sidebarClass }>
             <ul className="Sidebar-ul">

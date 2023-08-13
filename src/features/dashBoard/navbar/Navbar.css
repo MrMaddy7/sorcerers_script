@@ -25,6 +25,7 @@
 .NavbarView .nav-1 {
   display: flex;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 .NavbarView .nav-2 {
   display: flex;
@@ -35,12 +36,14 @@
 .NavbarView .nav-2 .logo {
   max-width: 10rem;
   max-height: 10rem;
+  cursor: pointer;
 }
 .NavbarView .nav-2 h1 {
   font-family: "Muggle";
   font-size: 4rem;
   margin: 0 0 0 1rem;
   align-self: flex-start;
+  cursor: pointer;
 }
 .NavbarView .nav-2 .input-search {
   font-family: "QuietZoo";
@@ -63,6 +66,7 @@
 }
 .NavbarView .nav-3 {
   display: flex;
+  cursor: pointer;
 }
 .NavbarView .nav-3 ul {
   display: flex;

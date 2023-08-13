@@ -9,7 +9,6 @@ const sidebarSlice = createSlice({
         handleSideBarToggle: (state) => {
             // state.numOfCakes--;
             state.sidebarShow = !state.sidebarShow;
-            console.log("SideBarShow?", state.sidebarShow);
         },
     }
 });
