@@ -3,7 +3,7 @@
   src: url("../../../Fonts/FETTE___.TTF");
 }
 
-.Sidebar-panel {
+.Sidebar-panel-show {
   width: 22%;
   max-height: 75.2vh;
   overflow-y: scroll;
@@ -34,7 +34,11 @@
 }
 
 /* For WebKit browsers (Chrome, Safari) */
-.Sidebar-panel::-webkit-scrollbar {
+.Sidebar-panel-show::-webkit-scrollbar {
   width: 0;
   background-color: transparent;
+}
+
+.Sidebar-panel-hide {
+  display: none;
 }

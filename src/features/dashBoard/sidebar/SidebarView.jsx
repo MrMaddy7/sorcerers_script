@@ -1,4 +1,6 @@
 import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { handleSideBarToggle } from './sidebarSlice.js';
 import "./Sidebar.css";
 import BroomPng from '../../../assets/broom.png';
 
@@ -42,9 +44,11 @@ function SidebarView() {
             "tagName": "To-Do"
         },
     ];
-
+    const sidebarShow = useSelector((state) => state.sidebar.sidebarShow); //Boolean
+    const sidebarClass = `${sidebarShow ? 'Sidebar-panel-show' : 'Sidebar-panel-hide'}`;
+    console.log(sidebarClass, "Sidebar Class Variable");
     return (
-        <div className='Sidebar-panel'>
+        <div className={ sidebarClass }>
             <ul className="Sidebar-ul">
                 { listTags.map((ele) => {
                     return (

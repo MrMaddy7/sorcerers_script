@@ -1,4 +1,4 @@
-.CardContainer-Box {
+.CardContainer-Box-min {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -15,7 +15,28 @@
 }
 
 /* For WebKit browsers (Chrome, Safari) */
-.CardContainer-Box::-webkit-scrollbar {
+.CardContainer-Box-min::-webkit-scrollbar {
+  width: 0;
+  background-color: transparent;
+}
+
+.CardContainer-Box-max {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  scroll-behavior: smooth;
+  width: 95%;
+  height: 73vh;
+  position: absolute;
+  top: 11rem;
+  left: 2.3rem;
+  overflow-y: auto;
+}
+
+.CardContainer-Box-max::-webkit-scrollbar {
   width: 0;
   background-color: transparent;
 }/*# sourceMappingURL=CardContainer.css.map */

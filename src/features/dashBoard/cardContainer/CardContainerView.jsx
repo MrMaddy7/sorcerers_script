@@ -1,9 +1,13 @@
 import React from 'react';
 import './CardContainer.css';
+import { useSelector, useDispatch } from 'react-redux';
 import CardView from './card/CardView';
 
 //Place Card Component Here
 function CardContinerView() {
+
+    const sidebarShow = useSelector((state) => state.sidebar.sidebarShow); //Boolean
+    const maxminWidth = `${sidebarShow ? 'CardContainer-Box-min' : 'CardContainer-Box-max'}`;
 
     const cardArray = [
         {
@@ -111,7 +115,7 @@ function CardContinerView() {
 
 
     return (
-        <div className='CardContainer-Box'>
+        <div className={ maxminWidth }>
             { cardArray.map((ele) => {
                 return (
                     <CardView title={ ele.title } description={ ele.description } />

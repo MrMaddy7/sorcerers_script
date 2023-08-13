@@ -1,15 +1,24 @@
 import React from "react";
+import { useSelector, useDispatch } from 'react-redux';
 import DpLogo from '../../../assets/DP_Logo.png';
-import BurgerMenu from '../../../assets/Wand.png';
+import BurgerMenuSide from '../../../assets/WandSide.png';
+import BurgerMenuDown from '../../../assets/WandDown.png';
 import SettingsWheel from '../../../assets/Settings.png';
 import UserWheel from '../../../assets/User.png';
+import { handleSideBarToggle } from '../sidebar/sidebarSlice.js';
+
 import "./Navbar.css";
 
 function NavbarView() {
+
+  const sidebarShow = useSelector((state) => state.sidebar.sidebarShow); //Boolean
+  const burgerImage = sidebarShow ? BurgerMenuSide : BurgerMenuDown;
+  const dispatch = useDispatch();
+
   return <nav className="NavbarView">
 
     <div className="nav-1">
-      <img className="burger-menu" src={ BurgerMenu } />
+      <img className="burger-menu" src={ burgerImage } onClick={ () => dispatch(handleSideBarToggle()) } />
     </div>
     <div className="nav-2">
       <img className="logo" src={ DpLogo } />

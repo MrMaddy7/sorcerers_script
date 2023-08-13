@@ -10,7 +10,7 @@ import SignUpView from "./features/signUp/SignUpView";
 function App() {
   return (
     <div className="App-layout">
-      <BackgroundMusic />
+      {/* <BackgroundMusic /> */ }
       <DashboardView />
       {/* <LoginView /> */ }
       {/* <SignUpView /> */ }
