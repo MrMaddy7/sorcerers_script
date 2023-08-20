@@ -6,12 +6,14 @@ import BurgerMenuDown from '../../../assets/WandDown.png';
 import SettingsWheel from '../../../assets/Settings.png';
 import UserWheel from '../../../assets/User.png';
 import { handleSideBarToggle } from '../sidebar/sidebarSlice.js';
+import { handleSearchText } from './navbarSlice.js';
+import { handleOnBlur } from '../cardContainer/cardContainerSlice';
 
 import "./Navbar.css";
 
 function NavbarView() {
 
-  const sidebarShow = useSelector((state) => state.sidebar.sidebarShow); //Boolean
+  const sidebarShow = useSelector((state) => state.sidebar.sidebarShow);
   const burgerImage = sidebarShow ? BurgerMenuSide : BurgerMenuDown;
   const dispatch = useDispatch();
 
@@ -23,7 +25,7 @@ function NavbarView() {
     <div className="nav-2">
       <img className="logo" src={ DpLogo } />
       <h1>Sorcerer's Script</h1>
-      <input className="input-search" placeholder="Search..."></input>
+      <input onBlur={ () => dispatch(handleOnBlur()) } onChange={ (e) => dispatch(handleSearchText(e.target.value)) } className="input-search" placeholder="Search..."></input>
     </div>
     <div className="nav-3">
       <ul>
