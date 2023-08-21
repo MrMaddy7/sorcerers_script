@@ -6,6 +6,7 @@ import CardView from './card/CardView';
 
 //Place Card Component Here
 function CardContinerView() {
+    const selectedTag = useSelector((state) => state.sidebar.selectedTag);
     const sidebarShow = useSelector((state) => state.sidebar.sidebarShow);
     const searchText = useSelector((state) => state.navbar.searchText);
     const cardArray = useSelector((state) => state.cardContainer.cardArray);
@@ -32,12 +33,15 @@ function CardContinerView() {
         }
     }, [searchText]);
 
-    // useEffect(() => {
-    //     console.log("This use Effect RAN");
-    //     if (searchText.length == 0) {
-    //         setDisplayArray([...cardArray]);
-    //     }
-    // },);
+    useEffect(() => {
+        let filteredTagCards = [];
+        if (selectedTag === "All") {
+            filteredTagCards = [...cardArray];
+        } else {
+            filteredTagCards = cardArray.filter(card => card.tag === selectedTag);
+        }
+        setDisplayArray(filteredTagCards);
+    }, [selectedTag]);
 
 
     return (

@@ -4,7 +4,7 @@ const sidebarSlice = createSlice({
     name: "sidebar",
     initialState: {
         sidebarShow: true,
-        selectedTag: "",
+        selectedTag: "All",
     },
     reducers: {
         handleSideBarToggle: (state) => {
@@ -13,10 +13,14 @@ const sidebarSlice = createSlice({
         },
         handleSelectedTag: (state, action) => {
             state.selectedTag = action.payload;
+        },
+        resetSelectedTag: (state) => {
+            console.log("This function ran");
+            state.selectedTag = "All";
         }
     }
 
 });
 
 export default sidebarSlice.reducer;
-export const { handleSideBarToggle, handleSelectedTag } = sidebarSlice.actions;
+export const { handleSideBarToggle, handleSelectedTag, resetSelectedTag } = sidebarSlice.actions;

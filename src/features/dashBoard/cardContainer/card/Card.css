@@ -9,7 +9,7 @@
 .SingleCard {
   margin: 1rem;
   width: 15rem;
-  min-height: 35vh;
+  height: 35vh;
   text-align: justify;
   border: 1px solid black;
   border-radius: 15px;
