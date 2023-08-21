@@ -16,6 +16,11 @@ function CardContinerView() {
     const maxminWidth = `${sidebarShow ? 'CardContainer-Box-min' : 'CardContainer-Box-max'}`;
 
     useEffect(() => {
+        setDisplayArray([...cardArray]);
+    }, [cardArray]);
+
+
+    useEffect(() => {
         if (searchText.length == 0) {
             setDisplayArray([...cardArray]);
         }
@@ -48,7 +53,7 @@ function CardContinerView() {
         <div className={ maxminWidth }>
             { displayArray.map((ele) => {
                 return (
-                    <CardView key={ ele.key } title={ ele.title } description={ ele.description } />
+                    <CardView key={ ele.key } id={ ele.key } title={ ele.title } description={ ele.description } tag={ ele.tag } />
                 );
             }) }
         </div>

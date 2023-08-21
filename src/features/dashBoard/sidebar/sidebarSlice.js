@@ -15,7 +15,7 @@ const sidebarSlice = createSlice({
             state.selectedTag = action.payload;
         },
         resetSelectedTag: (state) => {
-            console.log("This function ran");
+
             state.selectedTag = "All";
         }
     }

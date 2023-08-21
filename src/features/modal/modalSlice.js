@@ -7,10 +7,7 @@ const modalSlice = createSlice({
         key: "",
         title: "",
         description: "",
-        isPinned: false,
         tag: "",
-        date: ""
-
     },
     reducers: {
         handleModalToggle: (state) => {
@@ -19,7 +16,11 @@ const modalSlice = createSlice({
         addData: (state, action) => {
             state.title = action.payload.title;
             state.description = action.payload.description;
+            state.tag = action.payload.tag;
+            state.key = action.payload.id;
         }
+
+
     }
 });
 

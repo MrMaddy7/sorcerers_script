@@ -1,18 +1,22 @@
 @font-face {
   font-family: "ParryHotter";
-  src: url("../../../../Fonts/ParryHotter.ttf");
+  src: url("../../../src/Fonts/ParryHotter.ttf");
 }
 @font-face {
   font-family: "DJB";
-  src: url("../../../../Fonts/DJB I Love a Ginger.ttf");
+  src: url("../../../src/Fonts/DJB I Love a Ginger.ttf");
 }
 @font-face {
   font-family: "QuietZoo";
-  src: url("../../Fonts/QuietZoo.ttf");
+  src: url("../../../src/Fonts/QuietZoo.ttf");
+}
+@font-face {
+  font-family: "Fette";
+  src: url("../../../src/Fonts/FETTE___.TTF");
 }
 .modal {
   position: absolute;
-  top: 15rem;
+  top: 10rem;
   left: 20rem;
   width: 100vh;
   padding: 1rem;
@@ -27,17 +31,43 @@
   flex-direction: column;
   align-items: center;
 }
-.modal h1 {
+
+.modal .inputbox-title {
   font-family: "ParryHotter";
+  align-self: flex-start;
+  border: none;
+  background-color: transparent;
+  align-self: center;
+  font-size: 3rem;
+  width: 100%;
 }
-.modal p {
+
+.modal .inputbox-title:focus {
+  outline: none;
+}
+
+.modal .inputbox-description {
   font-family: "DJB";
+  align-self: flex-start;
+  border: none;
+  background-color: transparent;
+  align-self: flex-start;
+  font-size: 1.5rem;
+  line-height: 35px;
+  width: 100%;
+  padding-bottom: 10vh;
 }
+
+.modal .inputbox-description:focus {
+  outline: none;
+}
+
 .modal .modal-buttons {
   display: flex;
   flex-direction: row;
   gap: 1rem;
 }
+
 .modal .modal-buttons button {
   margin: 2rem 0 0 0;
   width: 8rem;
@@ -49,6 +79,28 @@
   font-size: 2.5rem;
   cursor: pointer;
 }
+
 .modal .modal-buttons button:hover {
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+} 
+.modal-dropdown {
+  position: absolute;
+  right: 0;
+  padding: 0 1rem 0 1rem;
+}
+
+label {
+  font-family: "Fette";
+  font-size: 1rem;
+}
+
+select {
+  font-size: 1rem;
+  font-family: "Fette";
+  background-color: transparent;
+  border: none;
+}
+
+select:focus {
+  outline: none;
 }/*# sourceMappingURL=Modal.css.map */

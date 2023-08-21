@@ -4,14 +4,14 @@ import { useSelector, useDispatch } from 'react-redux';
 import { handleModalToggle, addData } from '../../../modal/modalSlice';
 
 
-function CardView({ title, description }) {
+function CardView({ id, title, description, tag }) {
     // const modalShow = useSelector((state) => state.modal.modalShow); //Boolean
 
     const dispatch = useDispatch();
 
     const handleSingleCardClick = () => {
         dispatch(handleModalToggle());
-        dispatch(addData({ title, description }));
+        dispatch(addData({ id, title, description, tag }));
     };
     return (
         <div className="SingleCard" onClick={ handleSingleCardClick }>
