@@ -135,6 +135,19 @@ const cardContainerSlice = createSlice({
         handleOnBlur: (state) => {
 
         },
+        handleSaveNewNote: (state, action) => {
+            const newKey = state.cardArray.length;
+            const tempObject = {
+                key: newKey,
+                title: action.payload.title,
+                description: action.payload.description,
+                isPinned: false,
+                tag: action.payload.tag || "Personal",
+            };
+            console.log(tempObject, "NEw Object in the card array");
+            state.cardArray.push(tempObject);
+
+        },
         handleEditNote: (state, action) => {
             //console.log(action.payload, "This is in edit state");
             const indexToUpdate = state.cardArray.findIndex(card => card.key === action.payload.key);
@@ -143,11 +156,9 @@ const cardContainerSlice = createSlice({
                     ...action.payload
                 };
             }
-
-
         }
     }
 });
 
 export default cardContainerSlice.reducer;
-export const { handleSearchArray, handleOnBlur, handleEditNote } = cardContainerSlice.actions;
+export const { handleSearchArray, handleOnBlur, handleEditNote, handleSaveNewNote } = cardContainerSlice.actions;

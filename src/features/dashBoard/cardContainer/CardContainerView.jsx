@@ -3,9 +3,13 @@ import { useEffect, useState } from 'react';
 import './CardContainer.css';
 import { useSelector, useDispatch } from 'react-redux';
 import CardView from './card/CardView';
+import Quill from '../../../assets/quill.png';
+import { handleModalToggle, addData, handleModalCreation } from '../../modal/modalSlice.js';
+
 
 //Place Card Component Here
 function CardContinerView() {
+    const dispatch = useDispatch();
     const selectedTag = useSelector((state) => state.sidebar.selectedTag);
     const sidebarShow = useSelector((state) => state.sidebar.sidebarShow);
     const searchText = useSelector((state) => state.navbar.searchText);
@@ -48,9 +52,18 @@ function CardContinerView() {
         setDisplayArray(filteredTagCards);
     }, [selectedTag]);
 
+    const handleAddCardClick = () => {
+        dispatch(handleModalCreation());
+        dispatch(handleModalToggle());
+        // dispatch(addData({ id, title, description, tag }));
+    };
+
 
     return (
         <div className={ maxminWidth }>
+            <div className="SingleCard QuillDiv" onClick={ handleAddCardClick }>
+                <img className="QuillImg" src={ Quill } />
+            </div>
             { displayArray.map((ele) => {
                 return (
                     <CardView key={ ele.key } id={ ele.key } title={ ele.title } description={ ele.description } tag={ ele.tag } />

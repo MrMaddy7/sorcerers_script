@@ -40,4 +40,16 @@
 .CardContainer-Box-max::-webkit-scrollbar {
   width: 0;
   background-color: transparent;
+}
+
+.QuillDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.QuillImg {
+  align-self: center;
+  height: 5rem;
+  width: 5rem;
+  opacity: 50%;
 }/*# sourceMappingURL=CardContainer.css.map */
