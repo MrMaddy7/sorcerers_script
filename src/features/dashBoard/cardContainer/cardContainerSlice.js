@@ -156,9 +156,16 @@ const cardContainerSlice = createSlice({
                     ...action.payload
                 };
             }
+        },
+        handleDeleteNote: (state, action) => {
+            //Find the kye pop the object
+            const indexToDelete = state.cardArray.findIndex(item => item.key === action.payload.key);
+            if (indexToDelete !== -1) {
+                state.cardArray.splice(indexToDelete, 1);
+            }
         }
     }
 });
 
 export default cardContainerSlice.reducer;
-export const { handleSearchArray, handleOnBlur, handleEditNote, handleSaveNewNote } = cardContainerSlice.actions;
+export const { handleSearchArray, handleOnBlur, handleEditNote, handleSaveNewNote, handleDeleteNote } = cardContainerSlice.actions;

@@ -3,7 +3,9 @@ import { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { handleModalToggle, addData, handleEmptyModalState, handleModalCreation } from './modalSlice';
-import { handleEditNote, handleSaveNewNote } from '../dashBoard/cardContainer/cardContainerSlice.js';
+import { handleEditNote, handleSaveNewNote, handleDeleteNote } from '../dashBoard/cardContainer/cardContainerSlice.js';
+import { resetSelectedTag } from '../dashBoard/sidebar/sidebarSlice.js';
+import Delete from '../../assets/Delete.png';
 import './Modal.css';
 
 function ModalView() {
@@ -81,7 +83,7 @@ function ModalView() {
             </div>
         );
     }
-    else {
+    else { //for Edit State
         return (
 
             <div className="modal">
@@ -130,6 +132,12 @@ function ModalView() {
                         Save
                     </button>
                 </div>
+                <img onClick={ () => {
+                    dispatch(handleDeleteNote(modalLocalState));
+                    dispatch(handleEmptyModalState());
+                    dispatch(handleModalToggle());
+                    dispatch(resetSelectedTag());
+                } } className="Delete-logo" src={ Delete } />
             </div>
         );
     }
