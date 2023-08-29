@@ -24,6 +24,12 @@
     line-height: 20px;
     padding: 0.5rem;
     word-spacing: 1px;
+    overflow: hidden;
+    word-break: break-word;
+    text-overflow: ellipsis; /* Add this line to show ellipsis for overflow */
+    display: -webkit-box; /* For multi-line text ellipsis */
+    -webkit-box-orient: vertical; /* For multi-line text ellipsis */
+    -webkit-line-clamp: 8; /* Show up to 5 lines of text */
   }
 }
 
