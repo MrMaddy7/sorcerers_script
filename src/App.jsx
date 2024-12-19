@@ -38,10 +38,10 @@ function App() {
       <ModalView />
       <BrowserRouter>
         <Routes>
-          <Route path="/Dashboard" element={ <DashboardView /> } />
+          <Route path="*" element={ <DashboardView /> } />
           <Route path="/Login" element={ <LoginView /> } />
           <Route path="/SignUp" element={ <SignUpView /> } />
-          <Route path="*" element={ renderNotFound() } />
+          {/* <Route path="*" element={ renderNotFound() } /> */}
         </Routes>
       </BrowserRouter>
     </div>
